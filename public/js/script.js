@@ -40,7 +40,7 @@ roll.addEventListener("click", function () {
       document.querySelector(`#cur_score-${activePlayer}`).textContent =
         curScore;
     } else {
-      if (score[activePlayer] >= 50) {
+      if (score[activePlayer] >= 100) {
         document.querySelector(`#socre-${activePlayer}`).textContent =
           score[activePlayer];
 
@@ -59,7 +59,7 @@ hold.addEventListener("click", function () {
   if (playing) {
     score[activePlayer] += curScore;
     // document.querySelector(`#cur_score-${activePlayer}`).textContent = 0;
-    if (score[activePlayer] >= 50) {
+    if (score[activePlayer] >= 100) {
       document.querySelector(`#socre-${activePlayer}`).textContent =
         score[activePlayer];
       document
