@@ -20,6 +20,8 @@ const init = () => {
   cur1.textContent = 0;
   document.querySelector(`#socre-${activePlayer}`).textContent =
     score[activePlayer];
+  player0.classList.add("activeplayer");
+  player1.classList.remove("activeplayer");
 };
 init();
 swithPlayer = () => {
@@ -76,8 +78,6 @@ restart.addEventListener("click", function () {
   document
     .querySelector(`.player${activePlayer}_cs`)
     .classList.remove("winner");
-  player0.classList.add("activeplayer");
-  player1.classList.remove("activeplayer");
 
   init();
 });
