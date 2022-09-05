@@ -7,7 +7,8 @@ body{
     padding: 0;
     overflow: hidden;
     height: 100vh;
-    background: linear-gradient(rgb(253, 42, 42) 30%,rgb(238, 95, 95) 80% );
+    background-color: black;
+    /* background: linear-gradient(rgb(253, 42, 42) 30%,rgb(238, 95, 95) 80% ); */
     background-repeat: no-repeat;
     font-family: 'Secular One', sans-serif;
     display: flex;
@@ -56,7 +57,7 @@ body{
 .p0footer_cs,.p1footer_cs{
     width: 50%;
     height: 30%;
-    background-color: rgba(233, 35, 35, 0.815);
+    background-color: rgba(221, 61, 61, 0.815);
     margin: auto;
     margin-top: 10%;
     border-radius: 2vmax;
@@ -71,6 +72,7 @@ body{
 }
 .p0current_cs,.cur0score,.p1current_cs,.cur1score{
     margin: 0;
+
 }
 .dice_cs{
     position: absolute;
@@ -106,4 +108,11 @@ body{
 }
 .btn_cs:active{
     transform: translateY(3%);
+}
+
+.activeplayer {
+    background-color: rgb(128, 233, 128);
+}
+.winner{
+    background-color: white;
 }
